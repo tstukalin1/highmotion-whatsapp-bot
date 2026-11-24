@@ -149,7 +149,31 @@
 
 ---
 
-## Следующий шаг (начинай здесь)
+## Тест без WhatsApp (начни здесь!)
+
+Нужен **только** `ANTHROPIC_API_KEY`. WhatsApp-токены не нужны.
+
+```bash
+# 1. Установи зависимости (один раз)
+cd /путь/к/проекту
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+# 2. Запусти dev-чат
+ANTHROPIC_API_KEY=sk-ant-... python scripts/dev_chat.py
+```
+
+Что работает в этом режиме:
+- ✅ Диалог с ИИ (Claude отвечает по-настоящему)
+- ✅ Создание броней в памяти (`/status` — покажет)
+- ✅ Генерация QR-кодов (сохраняются в `qr_images/`)
+- ✅ Запись в Word-файл (`bookings/`)
+- ⬛ Отправка сообщений в WhatsApp (заглушка, логи в консоль)
+- ⬛ Реальная оплата (подтвердить вручную командой `/admin`)
+
+---
+
+## Следующий шаг (после dev-теста)
 
 **→ Этап 0.3: скопируй `.env.example` в `.env` и заполни обязательные поля:**
 
@@ -159,8 +183,6 @@ cp .env.example .env
 # WHATSAPP_ACCESS_TOKEN, WHATSAPP_PHONE_NUMBER_ID, WHATSAPP_VERIFY_TOKEN,
 # WHATSAPP_APP_SECRET, ANTHROPIC_API_KEY
 ```
-
-После этого можно запустить проект в `DEV_MODE=true` и протестировать ИИ без реального WhatsApp.
 
 ---
 

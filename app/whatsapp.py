@@ -45,8 +45,28 @@ def _record_user_message(phone: str) -> None:
     _last_user_message_at[phone] = time.time()
 
 
+def _dev_stub(label: str, payload: Any = None) -> Any:
+    """In DEV_MODE, log the outgoing call and return a fake success response."""
+    logger.info("[DEV_MODE] WhatsApp stub — %s | payload: %s", label, payload)
+
+    class _FakeResp:
+        status_code = 200
+
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"messages": [{"id": "dev_stub_id"}]}
+
+    return _FakeResp()
+
+
 def _retry_request(func, *args, max_attempts: int = 3, **kwargs) -> httpx.Response:
     """Call *func* up to *max_attempts* times with exponential back-off."""
+    if settings.DEV_MODE:
+        label = getattr(func, "__name__", str(func))
+        return _dev_stub(label, kwargs.get("json"))
+
     last_exc: Optional[Exception] = None
     for attempt in range(max_attempts):
         try:
