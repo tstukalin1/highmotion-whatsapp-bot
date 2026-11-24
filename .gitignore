@@ -1,0 +1,67 @@
+# ── Secrets ───────────────────────────────────────────────────
+.env
+*.pem
+*.key
+*.crt
+
+# ── Database ───────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Generated artifacts ────────────────────────────────────────
+bookings/*.docx
+qr_images/*.png
+
+# ── Python ─────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+MANIFEST
+
+# ── Virtual environments ───────────────────────────────────────
+.venv/
+venv/
+ENV/
+env/
+
+# ── Testing ────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+nosetests.xml
+junit.xml
+
+# ── Linting ────────────────────────────────────────────────────
+.ruff_cache/
+.mypy_cache/
+
+# ── Logs ───────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── IDE ────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Docker ─────────────────────────────────────────────────────
+# (intentionally NOT ignoring docker-compose.yml or Dockerfile)
