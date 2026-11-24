@@ -1,0 +1,11 @@
+{
+  "name": "<<BUSINESS_NAME>>",
+  "tagline": "<<BUSINESS_TAGLINE>>",
+  "phone": "<<BUSINESS_PHONE>>",
+  "email": "<<BUSINESS_EMAIL>>",
+  "website": "<<BUSINESS_WEBSITE>>",
+  "address": "<<BUSINESS_ADDRESS>>",
+  "logo_path": "<<BUSINESS_LOGO_PATH>>",
+  "cancellation_policy": "<<CANCELLATION_POLICY>>",
+  "working_hours": "<<WORKING_HOURS>>"
+}

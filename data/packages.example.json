@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "<<PACKAGE_1_NAME>>",
+    "description": "<<PACKAGE_1_DESCRIPTION>>",
+    "price": "<<PACKAGE_1_PRICE>>",
+    "capacity": "<<PACKAGE_1_CAPACITY>>",
+    "duration_hours": "<<PACKAGE_1_DURATION_HOURS>>",
+    "includes": [
+      "<<PACKAGE_1_INCLUDES_1>>",
+      "<<PACKAGE_1_INCLUDES_2>>"
+    ],
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "<<PACKAGE_2_NAME>>",
+    "description": "<<PACKAGE_2_DESCRIPTION>>",
+    "price": "<<PACKAGE_2_PRICE>>",
+    "capacity": "<<PACKAGE_2_CAPACITY>>",
+    "duration_hours": "<<PACKAGE_2_DURATION_HOURS>>",
+    "includes": [
+      "<<PACKAGE_2_INCLUDES_1>>",
+      "<<PACKAGE_2_INCLUDES_2>>"
+    ],
+    "active": true
+  },
+  {
+    "id": 3,
+    "name": "<<PACKAGE_3_NAME>>",
+    "description": "<<PACKAGE_3_DESCRIPTION>>",
+    "price": "<<PACKAGE_3_PRICE>>",
+    "capacity": "<<PACKAGE_3_CAPACITY>>",
+    "duration_hours": "<<PACKAGE_3_DURATION_HOURS>>",
+    "includes": [
+      "<<PACKAGE_3_INCLUDES_1>>",
+      "<<PACKAGE_3_INCLUDES_2>>"
+    ],
+    "active": true
+  }
+]
