@@ -34,6 +34,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+# Загружаем .env до всех проверок
+_env_file = ROOT / ".env"
+if _env_file.exists():
+    for _line in _env_file.read_text(encoding="utf-8").splitlines():
+        _line = _line.strip()
+        if _line and not _line.startswith("#") and "=" in _line:
+            _k, _, _v = _line.partition("=")
+            os.environ.setdefault(_k.strip(), _v.strip())
+
 # Включаем DEV_MODE до импорта конфига
 os.environ.setdefault("DEV_MODE", "true")
 
@@ -93,15 +102,17 @@ def _seed_packages(db) -> None:
     import json
     from decimal import Decimal
 
-    packages_file = ROOT / "data" / "packages.example.json"
+    packages_file = ROOT / "data" / "packages.json"
     if not packages_file.exists():
-        print("⚠️  data/packages.example.json не найден — пакеты не загружены.")
+        packages_file = ROOT / "data" / "packages.example.json"
+    if not packages_file.exists():
+        print("⚠️  data/packages.json не найден — пакеты не загружены.")
         return
 
     try:
         raw = json.loads(packages_file.read_text(encoding="utf-8"))
     except Exception as exc:
-        print(f"⚠️  Не удалось прочитать packages.example.json: {exc}")
+        print(f"⚠️  Не удалось прочитать {packages_file.name}: {exc}")
         return
 
     loaded = 0
@@ -124,11 +135,10 @@ def _seed_packages(db) -> None:
 
     db.commit()
     if loaded:
-        print(f"📦  Загружено {loaded} пакет(ов) из packages.example.json")
+        print(f"📦  Загружено {loaded} пакет(ов) из {packages_file.name}")
     else:
         print(
-            "⚠️  Пакеты в packages.example.json ещё не заполнены (содержат плейсхолдеры).\n"
-            "    ИИ не сможет показать пакеты, но диалог работает."
+            "⚠️  Пакеты содержат плейсхолдеры — ИИ не сможет показать пакеты, но диалог работает."
         )
 
 

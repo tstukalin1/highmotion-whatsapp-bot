@@ -40,7 +40,7 @@ class Settings(BaseSettings):
 
     # ── Anthropic ─────────────────────────────────────────────────────────────
     ANTHROPIC_API_KEY: str = "<<ANTHROPIC_API_KEY>>"
-    CLAUDE_MODEL: str = "claude-opus-4-6"
+    CLAUDE_MODEL: str = "claude-haiku-4-5-20251001"
 
     # ── Database ──────────────────────────────────────────────────────────────
     DATABASE_URL: str = "sqlite:///./whatsapp_bot.db"

@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "name": "Desert Safari (Evening)",
+    "description": "Classic evening desert safari in the Red Dunes of Dubai. Dune bashing, camel ride, BBQ dinner at the camp, live entertainment.",
+    "price": 199,
+    "capacity": 7,
+    "duration_hours": 8,
+    "includes": [
+      "Hotel pickup & drop-off",
+      "Dune bashing in 4x4",
+      "Camel ride",
+      "BBQ dinner",
+      "Live entertainment (belly dance, tanoura show)",
+      "Soft drinks & water"
+    ],
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "Morning Safari",
+    "description": "Early morning desert safari with sunrise views over the red dunes. Sandboarding, quad ride, light breakfast.",
+    "price": 199,
+    "capacity": 7,
+    "duration_hours": 4,
+    "includes": [
+      "Hotel pickup & drop-off",
+      "Dune bashing",
+      "Sandboarding",
+      "Light breakfast",
+      "Water & soft drinks"
+    ],
+    "active": true
+  },
+  {
+    "id": 3,
+    "name": "Short Desert Safari",
+    "description": "Quick desert experience — perfect for those short on time. Dune bashing and photo stop at the red dunes.",
+    "price": 149,
+    "capacity": 7,
+    "duration_hours": 2,
+    "includes": [
+      "Hotel pickup & drop-off",
+      "Dune bashing",
+      "Photo stop at red dunes",
+      "Water"
+    ],
+    "active": true
+  },
+  {
+    "id": 4,
+    "name": "Morning Quad — Kymco 350cc",
+    "description": "Solo quad biking in the morning desert. Great for beginners and intermediate riders. No driving licence required.",
+    "price": 630,
+    "capacity": 1,
+    "duration_hours": 1,
+    "includes": [
+      "Quad bike (Kymco/Grizzly 350cc)",
+      "Safety gear",
+      "Guide",
+      "Water"
+    ],
+    "active": true
+  },
+  {
+    "id": 5,
+    "name": "Morning Quad — Polaris Sportsman 570cc",
+    "description": "Powerful solo quad biking in the morning desert for more experienced riders. No driving licence required.",
+    "price": 830,
+    "capacity": 1,
+    "duration_hours": 1,
+    "includes": [
+      "Quad bike (Polaris 570cc Sportsman)",
+      "Safety gear",
+      "Guide",
+      "Water"
+    ],
+    "active": true
+  },
+  {
+    "id": 6,
+    "name": "Evening Buggy — Polaris RZR 1000cc",
+    "description": "High-performance side-by-side buggy experience in the afternoon dunes. Can fit 1–2 riders.",
+    "price": 999,
+    "capacity": 2,
+    "duration_hours": 1,
+    "includes": [
+      "Polaris RZR 1000cc buggy",
+      "Safety gear & helmets",
+      "Guide",
+      "Water"
+    ],
+    "active": true
+  },
+  {
+    "id": 7,
+    "name": "Two Hours Buggy — Polaris RZR 1000cc",
+    "description": "Extended 2-hour buggy ride for a more immersive desert experience. Can fit 1–2 riders.",
+    "price": 1699,
+    "capacity": 2,
+    "duration_hours": 2,
+    "includes": [
+      "Polaris RZR 1000cc buggy",
+      "Safety gear & helmets",
+      "Guide",
+      "Water & snacks"
+    ],
+    "active": true
+  },
+  {
+    "id": 8,
+    "name": "Can Am Maverick X3 (2-seater)",
+    "description": "Premium Can Am Maverick X3 Turbo — the ultimate desert buggy for 1–2 riders. High speed, maximum adrenaline.",
+    "price": 1250,
+    "capacity": 2,
+    "duration_hours": 1,
+    "includes": [
+      "Can Am Maverick X3 Turbo (2-seater)",
+      "Safety gear & helmets",
+      "Guide",
+      "Water"
+    ],
+    "active": true
+  },
+  {
+    "id": 9,
+    "name": "Can Am Maverick X3 (4-seater)",
+    "description": "Premium Can Am Maverick X3 for the whole family or group — up to 4 riders. Best desert performance.",
+    "price": 1999,
+    "capacity": 4,
+    "duration_hours": 1,
+    "includes": [
+      "Can Am Maverick X3 (4-seater)",
+      "Safety gear & helmets",
+      "Guide",
+      "Water"
+    ],
+    "active": true
+  },
+  {
+    "id": 10,
+    "name": "Safari + Quad Combo",
+    "description": "Best of both worlds — full evening safari with BBQ dinner plus a quad bike session in the dunes.",
+    "price": 349,
+    "capacity": 7,
+    "duration_hours": 9,
+    "includes": [
+      "Hotel pickup & drop-off",
+      "Dune bashing",
+      "Quad bike ride (30 min)",
+      "Camel ride",
+      "BBQ dinner",
+      "Live entertainment",
+      "Soft drinks & water"
+    ],
+    "active": true
+  }
+]

@@ -122,9 +122,12 @@ def _seed_packages_if_empty(db: Session) -> None:
     if db.query(Package).count() > 0:
         return
 
-    packages_file = Path(__file__).parent.parent / "data" / "packages.example.json"
+    packages_file = Path(__file__).parent.parent / "data" / "packages.json"
     if not packages_file.exists():
-        logger.warning("packages.example.json not found, skipping seed")
+        # fallback to example file
+        packages_file = Path(__file__).parent.parent / "data" / "packages.example.json"
+    if not packages_file.exists():
+        logger.warning("packages.json not found, skipping seed")
         return
 
     try:

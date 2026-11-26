@@ -1,0 +1,16 @@
+{
+  "name": "High Motion Tourism LLC",
+  "tagline": "Desert Safari & Buggy Tours in Dubai",
+  "phone": "+971505243777",
+  "email": "dubaiextremesafari@gmail.com",
+  "website": "https://www.highmotion.ae",
+  "address": "Dubai, UAE",
+  "logo_path": null,
+  "cancellation_policy": "Full refund if cancelled at least 24 hours before the tour. No refund for cancellations within 24 hours.",
+  "working_hours": "Daily 6:00 AM – 10:00 PM",
+  "prepayment_percent": 50,
+  "payment_deadline_hours": 24,
+  "languages": ["English", "Arabic", "Russian", "Spanish", "Turkish"],
+  "manager_whatsapp": "+971505243777",
+  "manager_email": "dubaiextremesafari@gmail.com"
+}
